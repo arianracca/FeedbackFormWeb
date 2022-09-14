@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Arian's feedback form page" author="Arian Racca"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Arian's feedback form</title>
+  </head>
+  <body>
+
+    <div class="form-background">
+      <header class="header">
+        <h1 id="title" class="text-center">Arian's feedback Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to check my work and give me your feedback
+        </p>
+      </header>
+      <form id="survey-form">
+
+        <div class="form-class">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required/>
+        </div>
+
+        <div class="form-class">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required/>
+        </div>
+
+        <div class="form-class">
+          <label id="number-label" for="number"
+            >Age<span class="improvement">(optional)</span></label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="18"
+            max="120"
+            class="form-control"
+            placeholder="Age"/>
+        </div>
+
+        <div class="form-class">
+          <p>Which option best describes your current relation with my work?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="follower">Social network follower</option>
+            <option value="coworker">Coworker</option>
+            <option value="employer">Employer</option>
+            <option value="recruiter">Recruiter</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-class">
+          <p>Would you recommend me as a developer?</p>
+          <label>
+            <input
+              name="recommendation"
+              value="definitely"
+              type="radio"
+              class="radio-option"
+              checked
+            />Definitely</label>
+          <label>
+            <input
+              name="recommendation"
+              value="maybe"
+              type="radio"
+              class="radio-option"
+            />Maybe</label>
+          <label>
+            <input
+              name="recommendation"
+              value="not-sure"
+              type="radio"
+              class="radio-option"
+            />Not sure</label>
+        </div>
+
+        <div class="form-class">
+          <p>How did you know about my work?</p>
+          <select id="know-mywork" name="know-mywork" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="social-network">Social network</option>
+            <option value="coworking">Coworking</option>
+            <option value="employer">Employed me</option>
+            <option value="recommendation">By recommendation</option>
+            <option value="blog">Reading my blog</option>
+            <option value="personalweb">My personal webpage</option>
+            <option value="linkedin">LinkedIn profile</option>
+          </select>
+        </div>
+
+        <div class="form-class">
+          <p>
+            What do I need to improove?
+            <span class="improvement">(Check all that apply)</span>
+          </p>
+
+          <label>
+            <input
+              name="prefer"
+              value="front-end"
+              type="checkbox"
+              class="checkbox-option"
+            />Front-end development</label>
+          <label>
+            <input
+              name="prefer"
+              value="back-end"
+              type="checkbox"
+              class="checkbox-option"
+            />Back-end development</label>
+          <label>
+            <input
+              name="prefer"
+              value="graphic-design"
+              type="checkbox"
+              class="checkbox-option"
+            />Graphic design</label>
+          <label>
+            <input
+              name="prefer"
+              value="video-edition"
+              type="checkbox"
+              class="checkbox-option"
+            />Video edition</label>
+          <label>
+            <input
+              name="prefer"
+              value="python"
+              type="checkbox"
+              class="checkbox-option"
+            />Python skills</label>
+          <label>
+            <input
+              name="prefer"
+              value="database management"
+              type="checkbox"
+              class="checkbox-option"
+            />Database management</label>
+          <label>
+            <input
+              name="prefer"
+              value="content"
+              type="checkbox"
+              class="checkbox-option"
+            />Content production</label>
+          <label>
+            <input
+              name="prefer"
+              value="accessibility"
+              type="checkbox"
+              class="checkbox-option"
+            />Accessibility</label>
+          <label>
+            <input
+              name="prefer"
+              value="interaction"
+              type="checkbox"
+              class="checkbox-option"
+            />Interaction</label>
+            <label>
+              <input
+                name="prefer"
+                value="communication"
+                type="checkbox"
+                class="checkbox-option"
+              />Communication skills</label>
+            <label>
+              <input
+                name="prefer"
+                value="other"
+                type="checkbox"
+                class="checkbox-option"
+                />Other</label>
+        </div>
+
+        <div class="form-class">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-class">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
